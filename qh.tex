@@ -1,0 +1,35 @@
+\documentclass{scrreprt}
+\usepackage[ngerman]{babel}
+\usepackage{subcaption}
+\usepackage{import}
+\usepackage{color}
+\usepackage[backend=biber,%
+defernumbers=true,%
+eprint=false,%
+doi=false,%
+maxnames=5]{biblatex}
+\addbibresource{literatur.bib}
+\usepackage{klausurpack}
+\pgfplotsset{samples=1000}
+
+\renewbibmacro{in:}{}
+
+\title{Quanten-Hall-Effekt}
+\author{Michael Rößner \quad Jonas Schambeck}
+
+\def\f#1{\textbf{#1}}
+
+\begin{document}
+    \maketitle
+    \setcounter{page}{1}
+    \tableofcontents
+
+    \include{Kap/einleitung}
+    \include{Kap/vorbereitung}
+    \include{Kap/durchfuehrung}
+    \include{Kap/fazit}
+    \include{Kap/quellen}
+
+\printbibliography
+
+\end{document}
