@@ -10,7 +10,18 @@ doi=false,%
 maxnames=5]{biblatex}
 \addbibresource{literatur.bib}
 \usepackage{klausurpack}
+\usepackage{pgfplots}
 \pgfplotsset{samples=1000}
+\pgfplotsset{width=\textwidth, every axis/.append style={
+                    axis x line=middle,    % put the x axis in the middle
+                    axis y line=middle,    % put the y axis in the middle
+                    axis line style={->}, % arrows on the axis
+                    xlabel={$x$},          % default put x on x-axis
+                    ylabel={$y$},          % default put y on y-axis
+                    font=\tiny
+            }}
+
+
 
 \renewbibmacro{in:}{}
 
@@ -28,7 +39,6 @@ maxnames=5]{biblatex}
     \include{Kap/vorbereitung}
     \include{Kap/durchfuehrung}
     \include{Kap/fazit}
-    \include{Kap/quellen}
 
 \printbibliography
 

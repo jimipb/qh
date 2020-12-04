@@ -1,0 +1,14 @@
+\begin{figure}
+    \begin{subfigure}[c]{0.6\textwidth}
+    \begin{tikzpicture}
+        \begin{axis}[%
+                ymax=3,xmin=0.5,
+                ticks=none,
+                xlabel={E}, ylabel={D(E)}
+        ]
+            \addplot[thick,blue] coordinates {(1,0)(1,0.5)(1.5,0.5)(1.5,1)(2.25,1)(2.25,1.5)(3.25,1.5)(3.25,2)(4.75,2)};
+        \end{axis}
+    \end{tikzpicture}
+    \end{subfigure}
+\end{figure}
+\end{frame
