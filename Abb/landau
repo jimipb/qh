@@ -1,4 +1,3 @@
-\begin{figure}
     % Parabel
     \begin{subfigure}[c]{0.33\textwidth}
     \begin{tikzpicture}
@@ -65,4 +64,3 @@
         \end{tikzpicture}
     \caption{Zustandsdichte spaltet in diskrete Landauniveaus auf}
     \end{subfigure}
-\end{figure
