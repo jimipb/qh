@@ -101,10 +101,54 @@ Widerstände ist in Abbildung \ref{Abb:klassisch} zu sehen.
     \label{Abb:klassisch}
 \end{figure}
 
-\begin{figure}
+\section{Quanten-Hall-Effekt}
+\subsection{Zweidimensionales Elektronengas}
+
+Die Untersuchung des Quanten-Hall-Effekts wird an einem sog. Zweidimensionales 
+Elektronengas durchgeführt. Hierbei handelt es sich um ein freies Elektronengas, 
+also die Elektronen können sich näherungsweise frei in alle Raumrichtungen bewegen,
+dass in einer Raumrichtung durch einen schmalen Potentialtopf eingeschränkt wird.
+Dies führt zu einer Quantisierung der Gesamtenergien, die ein Elektron haben kann.
+Ist nun nur das unterste Niveau besetzt, so können sich die Teilchen in zwei 
+Richtungen frei bewegen, während sie in die dritte eingesperrt sind. Somit ergibt
+sich der Begriff des Zweidimensionales Elektronengases.\\\\
+Zur theoretischen Betrachtung wählt man den Potentialtopf zur Vereinfachung in 
+$z$-Richtung. Die Energie in z-Richtung ist somit quantisiert und darstellbar als
+$E_{s} (s=0,1,\dots)$. Für die Gesamtenergie eines Elektrons ergibt sich:
+\[
+	E(s,k_{x},k_{y}) = E_{s} + \frac{\hbar^{2} k_{x}^{2}}{2m^{*}}
+					   + \frac{\hbar^{2} k_{y}^{2}}{2m^{*}}, \qquad{}
+	(s=0,1,\dots)
+\]
+$E_{s}$ ist unabhängig vom Wellenvektor $\vec{k}$, da in $z$-Richtung keine 
+Bewegung stattfindet. Die beiden hinteren Terme beschreiben die kontinuierliche
+freie Bewegung in der $x-y$-Ebene. $m^{*}$ bezeichnet die effektive Masse.
+
+\subsection{Theorie des Quanten-Hall-Effekt}
+
+Misst man den Hall-Effekt nun an einem Zweidimensionalen Elektronengas bei wenigen
+Kelvin und Magnetfeldern im einstelligen Teslabereich, so weicht das Ergebnis vom
+klassischen Hall-Effekt ab. Ein Beispiel dafür ist in Abbildung \ref{Abb:qhe} 
+dargestellt.
+
+\begin{figure}[ht]
     \centering
     \def\svgwidth{0.6\linewidth}
-    \import{Abb/}{Abb/quanten_hall.pdf_tex}
+    \import{Abb/}{quanten_hall.pdf_tex}
     \caption{Hall und Schichtwiderstand beim Quanten-Hall-Effekt}
-    \label{vorb:qh}
+    \label{Abb:qhe}
 \end{figure}
+
+Bei kleinem Magnetfeld deckt sich der Graph mit dem linearen Anstieg beim
+klassischen Hall-Effekt. Bei größeren Feldern bilden sich Plateaus bei bestimmten 
+Widerstandswerten aus:
+\[
+	R_{H} = \frac{1}{\nu} \frac{\hbar}{e^{2}}, \qquad (\nu=1,2,\dots)
+\]
+Dies wird als Quanten-Hall-Effekt bezeichnet
+Gleichzeitig oszilliert der Längswiderstand bei hohen Feldstärken. Die wirkliche
+ist jedoch sehr viel kleiner als der Hall-Widerstand. In Abbildung \ref{Abb:qhe}
+wurden deshalb beide Werte normalisiert, um die Lesbarkeit zu verbessern. 
+Die Minima der Oszillationen, bei denen der Längswiderstand verschwindet, liegt auf
+den Plateaus des Hall-Widerstands. Dieses Phänomen wird als
+Shubnikov-de-Haas-Oszillation bezeichnet.
