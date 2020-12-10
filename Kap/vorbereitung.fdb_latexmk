@@ -1,0 +1,13 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "vorbereitung.xdv" "vorbereitung.pdf" "vorbereitung" 0
+  "vorbereitung.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "vorbereitung.pdf"
+["xelatex"] 1607342536 "vorbereitung.tex" "vorbereitung.xdv" "vorbereitung" 1607342536
+  "/home/jonas/.texlive2019/texmf-var/web2c/xetex/xelatex.fmt" 1607337577 4769660 4f1bb5c7b8d453fdc548ae1bd46dac6d ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1589508560 35425 deb58bbc027bba264b75baf5a5d57981 ""
+  "vorbereitung.aux" 1607342190 360 b60544e1b09cb884eb12234661531600 ""
+  "vorbereitung.tex" 1607337484 4233 de7fdae6f5d3a8b8aee0d2899f16b497 ""
+  (generated)
+  "vorbereitung.log"
+  "vorbereitung.xdv"

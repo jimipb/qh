@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[1] Config.pm:307> INFO - Logfile is 'qh.blg'
+[150] biber:322> INFO - === Tue Dec  8, 2020, 11:58:42
+[177] Biber.pm:415> INFO - Reading 'qh.bcf'
+[378] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[393] Utils.pm:304> WARN - The file 'qh.bcf' does not contain any citations!
+[414] bbl.pm:652> INFO - Writing 'qh.bbl' with encoding 'UTF-8'
+[415] bbl.pm:755> INFO - Output to qh.bbl
+[416] Biber.pm:128> INFO - WARNINGS: 1

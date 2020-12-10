@@ -145,10 +145,45 @@ Widerstandswerten aus:
 \[
 	R_{H} = \frac{1}{\nu} \frac{\hbar}{e^{2}}, \qquad (\nu=1,2,\dots)
 \]
-Dies wird als Quanten-Hall-Effekt bezeichnet
+Dies wird als Quanten-Hall-Effekt bezeichnet.
 Gleichzeitig oszilliert der Längswiderstand bei hohen Feldstärken. Die wirkliche
 ist jedoch sehr viel kleiner als der Hall-Widerstand. In Abbildung \ref{Abb:qhe}
 wurden deshalb beide Werte normalisiert, um die Lesbarkeit zu verbessern. 
 Die Minima der Oszillationen, bei denen der Längswiderstand verschwindet, liegt auf
 den Plateaus des Hall-Widerstands. Dieses Phänomen wird als
-Shubnikov-de-Haas-Oszillation bezeichnet.
+Shubnikov-de-Haas-Oszillation bezeichnet.\\\\
+Zur theoretischen Betrachtung stellt man folgende Schrödingergleichung auf:
+\[
+	\left(
+		\frac{( i\hbar\nabla+e \, \vec{A}(x,y) )^{2}}{2m^{*}} + U(y)
+	\right) \Psi(x,y) = E \, \Psi(x,y)
+\]
+Hier wählt man $\vec{A} = (-By,0,0)$, sodass $\vec{B} = rot \vec{A}$ in $z$-Richtung
+zeigt. Das Randpotential $U(y)$ schränkt die Elektronenbewegung auf die Ausdehnung
+der Probe ein.
+Weiter wird nun eine eine ausreichend große Probe angenommen, sodass $U(y)$ 
+vernachlässigt werden kann:
+\newcommand{\zweim}{\frac{1}{2m^{*}}}
+\[{}
+	\zweim \left( (p_{x} + e B y)^{2} + p_{y}^{2}\right) \Psi(x,y) = E \Psi(x,y)\]
+$p_{x} = - i \hbar \partial_{x}$ und $p_{y} = - i \hbar \partial_{y}$ bezeichnen die
+Impulsoperatoren in $x$- bzw. $y$-Richtung.
+Zur Lösung wird nun der Separationsansatz verwendet:
+\[
+	\Psi(x,y) = \phi(x) \chi(y) = \frac{1}{\sqrt{L}} \exp(ikx) \chi(y)
+\]
+Für $\chi(y)$ muss also gelten:
+\[
+	\zweim \left[ (\hbar k + eBy)^{2} + p_{y}^{2} \right] \chi(y) = E \chi(y)
+\]
+Diese Gleichung kann in die Schrödingergleichung eines eindimensionalen,
+harmonischen Oszillators umgeformt werden. Hierzu wird die Frequenz
+$\omega_{c} = \frac{e B}{m^{*}}$ und die Zentrumskoordinate 
+$y_{k} = \frac{\hbar k}{eB}$ eingeführt. Durch einfaches Einsetzen ergibt sich:
+\[
+	\left[ \frac{p_{y}^{2}}{2m^{*}} + \frac{1}{2} m^{*} \omega_{c}^{2}
+	(y + y_{k})^{2} \right] \chi(y) = E \chi(y)
+\]
+Die Frequenz des harmonischen Oszillators ist die eingeführte Frequenz $\omega_{c}$.
+Die Koordinate $y_{k}$ bezeichnet die Verschiebung des harmonischen Oszillators auf
+der $y$-Achse vom Nullpunkt.
