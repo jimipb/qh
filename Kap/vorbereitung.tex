@@ -1,5 +1,48 @@
 \chapter{Vorbereitung}
 
+\section{Das Drude-Modell}
+
+Die von P. Drude um 1900 entwickelte Theorie zur Leitfähigkeit in Metallen stellte
+einen Sprung im Verständnis der Elektronenbewegungen dar. Wesentliche Ergebnisse
+dieser Betrachtung sind die Driftgeschwindigkeit $v_{d}$, die mittlere Stoßzeit
+$\tau$ und die klassische Bewegungsgleichung für Elektronen dar. Diese Ergebnisse
+werden auch zur Erklärung des klassischen Hall-Effekts benötigt. Deshalb soll nun
+ein kurzer Überblick gegeben werden.\\\\
+Die Theorie beschreibt Bewegungen von Elektronen in Leitern durch die kinetische
+Gastheorie. Diese werden als freie Teilchen mit der thermischen Geschwindigkeit
+$v_{th}$ betrachtet, die mit Atomrümpfen stoßen. Die zugehörige Bewegungsgleichung:
+\[
+    m \dot{\vec{v}} = - e \vec{E} - m \frac{v_{d}}{\tau}
+\]
+Die Driftgeschwindigkeit $v_{d}$ bezeichnet die vom E-Feld bewirkte zusätzliche 
+Geschwindigkeit $(v-v_{th})$. Die Relaxationszeit $\tau$ die Zeit, nach welcher die
+Driftgeschwindigkeit nach Abschalten des Feldes in den Gleichgewichtszustand geht,
+also $v_{d} = 0$. Dieser Wert ist charakteristisch für jedes Material und muss
+experimentell bestimmt werden. Der ganze Term $ m \, \vec{v_{d}} / \tau$ beschreibt
+eine Reibungs- oder Dämpfkraft. Im Modell wird die hemmende Wirkung der Stöße durch
+diesen berücksichtigt. Der Term $-e \vec{E}$ beschreibt die durch das elektrische 
+Gleichfeld auf die Elektronen wirkende konstante Kraft.\\\\
+Im stationären Fall, also $\dot{\vec{v}} = 0$, ergibt sich:
+\[
+    v_{d} = \frac{-e \tau}{m} \vec{E} = - \mu \vec{E}
+\]
+mit der Beweglichkeit $\mu = e \tau / m$. Für die Stromdichte kann man errechnen:
+\[
+    \vec{j} = -en\vec{v_{d}} = \frac{ne^{2}\tau}{m} \vec{E} = ne \mu \vec{E}
+\]
+Hier bezeichnet $n$ die Elektronendichte. Weiter folgt für die Leitfähigkeit:
+\[
+    \sigma = \frac{j}{E} = \frac{ne^{2}\tau}{m} = ne \mu
+\]
+Somit ist Drude gelung das Ohm'sche Gesetz auf zwei Materialparameter
+zurückzuführen.\\\\
+
+Es gilt zu beachten, dass dieses Modell annimmt, alle Leitungselektronen würden
+beschleunigt und gestreut. Dies ist jedoch mit dem Resultat unverträglich, dass
+Elektronen der Fermi-Dirac-Statistik unterliegen. Genauere Modelle kamen für diesen
+Fall später jedoch auf das gleiche Ergebnis, sodass diese Betrachtung für die 
+Erklärung des klassischen Hall-Effekt ausreicht. \cite{hunklinger}
+
 \section{Der klassische Hall-Effekt}
 
 Der klassische Hall-Effekt beschreibt den Effekt eines Magnetfeldes auf eine
@@ -11,11 +54,8 @@ Zur Diskussion beginnt man mit der klassischen Bewegungsgleichung im Magnetfeld:
     m^* \dot{\vec{v}} = - e \left( \vec{E} + \vec{v}_d \times \vec{B} \right)
                       - m^* \frac{\vec{v}_d}{\tau}
 \]
-Hierbei bezeichnet $\vec{v}_d$ die Driftgeschwindigkeit, $\tau$ die mittlere
-Stoßzeit, $m^*$ die effektive Masse, $\vec{E}$ das elektrische Feld und $\vec{B}$
-das Magnetfeld. Der Term $-e \vec{E}$ beschreibt die durch das elektrische 
-Gleichfeld auf die Elektronen wirkende konstante Kraft. Der letzte Teil 
-$m \, \vec{v_d} / \tau$ berücksichtigt die hemmende Wirkung der Stöße. 
+Hierbei sind $\vec{v}_d$, $\tau$ und $\vec{E}$ aus dem Drude-Modell bekannt.
+$m^*$ bezeichnet die effektive Masse und $\vec{B}$ das Magnetfeld. 
 Da die Elektronen bei jedem Stoß ihre Bewegungsrichtung ändern, bleibt außerdem
 nur der durch die Driftgeschwindigkeit verursachte Beitrag 
 $-e \left( \vec{v}_d \times \vec{B} \right)$ übrig.\\
@@ -26,7 +66,7 @@ im stationären Fall, also $\dot{\vec{v}} = 0$. Somit ergibt sich:
     \vec{v}_{d,y} &= - \frac{e \tau}{m^*} \left( E_y + \vec{v}_{d,x} \; B \right),\\
     \vec{v}_{d,x} &= - \frac{e \tau}{m^*} E_z
 \end{align*}
-Mit der Beweglichkeit $\mu = e \tau / m$ und der Elektronendichte
+Mit der Elektronendichte
 \[
     j = -e n \vec{v}_d = \frac{n e^2 \tau}{m} \vec{E} = n e \mu E
 \]
@@ -93,7 +133,7 @@ $R_H$ bezeichnet.
 In einem anisotropen Medium würden die Größen $\rho_{yx}$ und $\rho_{yy}$
 auftreten. Für isotrope Medien, die hier betrachtet werden sollen, gilt jedoch:
 $\rho_{xx} = \rho_{yy}$ und $\rho_{yx} = - \rho_{xy}$. Ein Plot der klassischen
-Widerstände ist in Abbildung \ref{Abb:klassisch} zu sehen.
+Widerstände ist in Abbildung \ref{Abb:klassisch} zu sehen. \cite{hunklinger}
 \begin{figure}
     \centering
     \input{Abb/hall_schicht_klassisch}
@@ -104,7 +144,7 @@ Widerstände ist in Abbildung \ref{Abb:klassisch} zu sehen.
 \section{Quanten-Hall-Effekt}
 \subsection{Zweidimensionales Elektronengas}
 
-Die Untersuchung des Quanten-Hall-Effekts wird an einem sog. Zweidimensionales 
+Die Untersuchung des Quanten-Hall-Effekts wird an einem sog. zweidimensionalen
 Elektronengas durchgeführt. Hierbei handelt es sich um ein freies Elektronengas, 
 also die Elektronen können sich näherungsweise frei in alle Raumrichtungen bewegen,
 dass in einer Raumrichtung durch einen schmalen Potentialtopf eingeschränkt wird.
@@ -135,7 +175,7 @@ dargestellt.
     \centering
     \def\svgwidth{0.6\linewidth}
     \import{Abb/}{quanten_hall.pdf_tex}
-    \caption{Hall und Schichtwiderstand beim Quanten-Hall-Effekt}
+    \caption{Hall und Schichtwiderstand beim Quanten-Hall-Effekt \cite{nobelqhe}}
     \label{Abb:qhe}
 \end{figure}
 
@@ -186,4 +226,73 @@ $y_{k} = \frac{\hbar k}{eB}$ eingeführt. Durch einfaches Einsetzen ergibt sich:
 \]
 Die Frequenz des harmonischen Oszillators ist die eingeführte Frequenz $\omega_{c}$.
 Die Koordinate $y_{k}$ bezeichnet die Verschiebung des harmonischen Oszillators auf
-der $y$-Achse vom Nullpunkt.
+der $y$-Achse vom Nullpunkt.\\\\
+Die Eigenfunktionen haben die Form:
+\begin{align*}
+    &\chi_{n,k}(y) = \exp \left[ - \frac{(q+q_{k})^{2}}{2} \right]
+                    H_{n} (q+q_{k})\\
+    &q = \sqrt{\frac{m^{*} \omega_{c}}{\hbar}} y, \qquad 
+     q_{k} = \sqrt{\frac{m^{*}\omega_{c}}{\hbar}}y_{k}
+\end{align*}
+$H_{n}$ bezeichnet das n-te Hermitesche Polynom. Für das weitere Vorgehen betrachtet
+man die Energiewerte, die unabhängig von $k$ sind und diskrete Werte annehmen:
+\[
+    E_{n} = \left(n + \frac{1}{2}\right) \hbar \omega_{c}
+    \qquad (n=0,1,2,\dots)
+\]
+Dies sind die Energiewerte der sogenannten Landauniveaus. 
+
+\begin{figure}
+    \centering
+    \input{Abb/landau.tex}
+    \caption{Energiezustände in verschiedenen Darstellungen: Beim Anlegen eines
+             Magnetfeldes gibt es nur diskrete Zustände, die besetzt werden können.}
+    \label{fig:landau}
+\end{figure}
+
+    \subsection{Herstellung eines Zweidimensionalen Elektronengases}
+    Die Realisierung eines zweidimensionalen Elektronengases (2DEG) erfolgt bei
+    unserem Versuch an der Grenzfläche zweier verschiedener Halbleitermaterialien:
+    mit Silizium dotiertes AlGaAs besitzt eine energetisch höheres Leitungsband
+    als GaAs, weswegen Elektronen in Richtung GaAs fließen. Durch diese
+    Ladungsverschiebung werden die verschieden Ferminiveaus der Schichten
+    angeglichen, sowie die Valenz- und Leitungsbänder verzerrt, wodurch eine Art
+    Potentialtopf in der Grenzfläche entsteht. Um die Elektronen in diesem
+    Potentialtopf von Wechselwirkungen mit den Donatoren in der Dotierschicht
+    abzuschirmen, wird noch eine sog. Spacerschicht dazwischen geschoben.
+    Diese besteht aus undotiertem AlGaAs. Außerdem wird noch eine Deckschicht
+    aus GaAs aufgewachsen, welche nur als Oxidationsschutz dient und für die
+    Erzeugung des 2DEG sonst von keiner Bedeutung ist. Die Schichtfolge mit den
+    dazugehörigen Bandstrukturen und dem Potentialtopf ist in Abb. dargestellt.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{Abb/Schichtfolge.PNG}
+	\caption{Schematische Darstellung der Schichtfolge mit Bandstruktur. Die Bänder sind durch die Ladungsverschiebung verzerrt und an der Grenzschicht von AlGaAs zu GaAs entsteht ein Potentialtopf (schwarz).}
+\end{figure}
+
+	\subsection{Van-der-Pauw-Methode}
+	Die Van-der-Pauw-Methode beschreibt ein Messverfahren, das ohne die äußerst aufwendige Herstellung einer Hallgeometrie in einer Halbleiterstruktur auskommt. Kurz zusammengefasst wird der Widerstand der Probe durch systematisches Vertauschen der Kontakte bestimmt. Dadurch ist die Geometrie der Probe bei diesem Verfahren nahezu beliebig und auch die Platzierung der Messkontakte muss nicht so präzise erfolgen, was einen deutlich einfacheren Messaufbau erlaubt.
+	
+	Eine Van-der-Pauw-Geometrie bezeichnet ein Halbleiterstück, welches mit vier Kontakten (im Folgenden jeweils mit A,B,C und D bezeichnet) versehen ist. Dabei wird davon ausgegangen, dass die Kontakte klein sind und sich am Rand der Probe befinden. Zudem muss die Halbleiterprobe homogen und gleichmäßig dotiert sein, sowie keine Löcher aufweisen. Es ist für die Messgenauigkeit jedoch von Vorteil eine möglichst symmetrische Probengeometrie zu wählen; also beispielsweise - wie in diesem Versuch - eine quadratische Form mit den Kontakten an den Ecken (siehe auch Abb.\ref{vdP}).
+	
+	Bei der Messung wird folgendermaßen vorgegangen: zwischen zwei Kontakten wird die Spannung gemessen, während durch die beiden anderen Kontakte ein Strom geschickt wird. Der zu dieser Messung gehörige Widerstand wird dann mit \[R_{ABCD}= \dfrac{U_{AB}}{I_{CD}}\] bezeichnet, wenn der Strom von C zu D fließt und die Spannung zwischen den Kontakten A und B gemessen wird.
+	Mithilfe von Funktionentheorie lässt sich nun zeigen, dass bei zyklischer Vertauschung der Kontakte der Widerstand $\rho$ der Probe durch folgende Gleichung gegeben ist:
+	\[\rho=\dfrac{\pi}{\text{ln}2}\bigg(\dfrac{R_{ABCD}+R_{BCDA}}{2}\bigg)f(Q)\]
+	Dabei bezeichnet $f(Q)$ den Van-der-Pauw-Korrekturfaktor mit $Q=R_{ABCD}/R_{BCDA}$. Diese Funktion wird numerisch bestimmt und kann dann graphisch ausgewertet werden (siehe Abb.\ref{f_Q}).
+	In Abb.\ref{vdP} ist schematisch dargestellt, wie nun die Längs- bzw. Hallspannung mittels der Van-der-Pauw-Methode bestimmt werden kann.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{Abb/vdp.PNG}
+		\caption{Messung von Längs- und Hallspannung mit der Van-der-Pauw-Methode}
+		\label{vdP}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{Abb/f_Q.PNG}
+		\caption{Korrekturfunktion der Van-der-Pauw-Methode in Abhängigkeit vom Verhältnis der Widerstände $Q$.}
+		\label{f_Q}
+	\end{figure}
+

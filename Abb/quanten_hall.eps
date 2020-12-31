@@ -1,0 +1,759 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%Produced by poppler pdftops version: 0.71.0 (http://poppler.freedesktop.org)
+%%LanguageLevel: 2
+%%DocumentSuppliedResources: (atend)
+%%BoundingBox: 0 0 121 85
+%%HiResBoundingBox: 0 0 120.029701 84.987015
+%%DocumentSuppliedResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset xpdf 3.00 0
+%%Copyright: Copyright 1996-2011 Glyph & Cog, LLC
+/xpdf 75 dict def xpdf begin
+% PDF special state
+/pdfDictSize 15 def
+/pdfSetup {
+  /setpagedevice where {
+    pop 2 dict begin
+      /Policies 1 dict dup begin /PageSize 6 def end def
+      { /Duplex true def } if
+    currentdict end setpagedevice
+  } {
+    pop
+  } ifelse
+} def
+/pdfSetupPaper {
+  % Change paper size, but only if different from previous paper size otherwise
+  % duplex fails. PLRM specifies a tolerance of 5 pts when matching paper size
+  % so we use the same when checking if the size changes.
+  /setpagedevice where {
+    pop currentpagedevice
+    /PageSize known {
+      2 copy
+      currentpagedevice /PageSize get aload pop
+      exch 4 1 roll
+      sub abs 5 gt
+      3 1 roll
+      sub abs 5 gt
+      or
+    } {
+      true
+    } ifelse
+    {
+      2 array astore
+      2 dict begin
+        /PageSize exch def
+        /ImagingBBox null def
+      currentdict end
+      setpagedevice
+    } {
+      pop pop
+    } ifelse
+  } {
+    pop
+  } ifelse
+} def
+/pdfStartPage {
+  pdfDictSize dict begin
+  /pdfFillCS [] def
+  /pdfFillXform {} def
+  /pdfStrokeCS [] def
+  /pdfStrokeXform {} def
+  /pdfFill [0] def
+  /pdfStroke [0] def
+  /pdfFillOP false def
+  /pdfStrokeOP false def
+  /pdfLastFill false def
+  /pdfLastStroke false def
+  /pdfTextMat [1 0 0 1 0 0] def
+  /pdfFontSize 0 def
+  /pdfCharSpacing 0 def
+  /pdfTextRender 0 def
+  /pdfPatternCS false def
+  /pdfTextRise 0 def
+  /pdfWordSpacing 0 def
+  /pdfHorizScaling 1 def
+  /pdfTextClipPath [] def
+} def
+/pdfEndPage { end } def
+% PDF color state
+/cs { /pdfFillXform exch def dup /pdfFillCS exch def
+      setcolorspace } def
+/CS { /pdfStrokeXform exch def dup /pdfStrokeCS exch def
+      setcolorspace } def
+/sc { pdfLastFill not { pdfFillCS setcolorspace } if
+      dup /pdfFill exch def aload pop pdfFillXform setcolor
+     /pdfLastFill true def /pdfLastStroke false def } def
+/SC { pdfLastStroke not { pdfStrokeCS setcolorspace } if
+      dup /pdfStroke exch def aload pop pdfStrokeXform setcolor
+     /pdfLastStroke true def /pdfLastFill false def } def
+/op { /pdfFillOP exch def
+      pdfLastFill { pdfFillOP setoverprint } if } def
+/OP { /pdfStrokeOP exch def
+      pdfLastStroke { pdfStrokeOP setoverprint } if } def
+/fCol {
+  pdfLastFill not {
+    pdfFillCS setcolorspace
+    pdfFill aload pop pdfFillXform setcolor
+    pdfFillOP setoverprint
+    /pdfLastFill true def /pdfLastStroke false def
+  } if
+} def
+/sCol {
+  pdfLastStroke not {
+    pdfStrokeCS setcolorspace
+    pdfStroke aload pop pdfStrokeXform setcolor
+    pdfStrokeOP setoverprint
+    /pdfLastStroke true def /pdfLastFill false def
+  } if
+} def
+% build a font
+/pdfMakeFont {
+  4 3 roll findfont
+  4 2 roll matrix scale makefont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /Encoding exch def
+    currentdict
+  end
+  definefont pop
+} def
+/pdfMakeFont16 {
+  exch findfont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /WMode exch def
+    currentdict
+  end
+  definefont pop
+} def
+% graphics state operators
+/q { gsave pdfDictSize dict begin } def
+/Q {
+  end grestore
+  /pdfLastFill where {
+    pop
+    pdfLastFill {
+      pdfFillOP setoverprint
+    } {
+      pdfStrokeOP setoverprint
+    } ifelse
+  } if
+} def
+/cm { concat } def
+/d { setdash } def
+/i { setflat } def
+/j { setlinejoin } def
+/J { setlinecap } def
+/M { setmiterlimit } def
+/w { setlinewidth } def
+% path segment operators
+/m { moveto } def
+/l { lineto } def
+/c { curveto } def
+/re { 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+      neg 0 rlineto closepath } def
+/h { closepath } def
+% path painting operators
+/S { sCol stroke } def
+/Sf { fCol stroke } def
+/f { fCol fill } def
+/f* { fCol eofill } def
+% clipping operators
+/W { clip newpath } def
+/W* { eoclip newpath } def
+/Ws { strokepath clip newpath } def
+% text state operators
+/Tc { /pdfCharSpacing exch def } def
+/Tf { dup /pdfFontSize exch def
+      dup pdfHorizScaling mul exch matrix scale
+      pdfTextMat matrix concatmatrix dup 4 0 put dup 5 0 put
+      exch findfont exch makefont setfont } def
+/Tr { /pdfTextRender exch def } def
+/Tp { /pdfPatternCS exch def } def
+/Ts { /pdfTextRise exch def } def
+/Tw { /pdfWordSpacing exch def } def
+/Tz { /pdfHorizScaling exch def } def
+% text positioning operators
+/Td { pdfTextMat transform moveto } def
+/Tm { /pdfTextMat exch def } def
+% text string operators
+/xyshow where {
+  pop
+  /xyshow2 {
+    dup length array
+    0 2 2 index length 1 sub {
+      2 index 1 index 2 copy get 3 1 roll 1 add get
+      pdfTextMat dtransform
+      4 2 roll 2 copy 6 5 roll put 1 add 3 1 roll dup 4 2 roll put
+    } for
+    exch pop
+    xyshow
+  } def
+}{
+  /xyshow2 {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval show moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval show moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/cshow where {
+  pop
+  /xycp {
+    0 3 2 roll
+    {
+      pop pop currentpoint 3 2 roll
+      1 string dup 0 4 3 roll put false charpath moveto
+      2 copy get 2 index 2 index 1 add get
+      pdfTextMat dtransform rmoveto
+      2 add
+    } exch cshow
+    pop pop
+  } def
+}{
+  /xycp {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval false charpath moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval false charpath moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/Tj {
+  fCol
+  0 pdfTextRise pdfTextMat dtransform rmoveto
+  currentpoint 4 2 roll
+  pdfTextRender 1 and 0 eq {
+    2 copy xyshow2
+  } if
+  pdfTextRender 3 and dup 1 eq exch 2 eq or {
+    3 index 3 index moveto
+    2 copy
+    currentfont /FontType get 3 eq { fCol } { sCol } ifelse
+    xycp currentpoint stroke moveto
+  } if
+  pdfTextRender 4 and 0 ne {
+    4 2 roll moveto xycp
+    /pdfTextClipPath [ pdfTextClipPath aload pop
+      {/moveto cvx}
+      {/lineto cvx}
+      {/curveto cvx}
+      {/closepath cvx}
+    pathforall ] def
+    currentpoint newpath moveto
+  } {
+    pop pop pop pop
+  } ifelse
+  0 pdfTextRise neg pdfTextMat dtransform rmoveto
+} def
+/TJm { 0.001 mul pdfFontSize mul pdfHorizScaling mul neg 0
+       pdfTextMat dtransform rmoveto } def
+/TJmV { 0.001 mul pdfFontSize mul neg 0 exch
+        pdfTextMat dtransform rmoveto } def
+/Tclip { pdfTextClipPath cvx exec clip newpath
+         /pdfTextClipPath [] def } def
+/Tclip* { pdfTextClipPath cvx exec eoclip newpath
+         /pdfTextClipPath [] def } def
+% Level 2/3 image operators
+/pdfImBuf 100 string def
+/pdfImStr {
+  2 copy exch length lt {
+    2 copy get exch 1 add exch
+  } {
+    ()
+  } ifelse
+} def
+/skipEOD {
+  { currentfile pdfImBuf readline
+    not { pop exit } if
+    (%-EOD-) eq { exit } if } loop
+} def
+/pdfIm { image skipEOD } def
+/pdfImM { fCol imagemask skipEOD } def
+/pr { 2 index 2 index 3 2 roll putinterval 4 add } def
+/pdfImClip {
+  gsave
+  0 2 4 index length 1 sub {
+    dup 4 index exch 2 copy
+    get 5 index div put
+    1 add 3 index exch 2 copy
+    get 3 index div put
+  } for
+  pop pop rectclip
+} def
+/pdfImClipEnd { grestore } def
+% shading operators
+/colordelta {
+  false 0 1 3 index length 1 sub {
+    dup 4 index exch get 3 index 3 2 roll get sub abs 0.004 gt {
+      pop true
+    } if
+  } for
+  exch pop exch pop
+} def
+/funcCol { func n array astore } def
+/funcSH {
+  dup 0 eq {
+    true
+  } {
+    dup 6 eq {
+      false
+    } {
+      4 index 4 index funcCol dup
+      6 index 4 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      5 index 5 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      6 index 8 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      colordelta or or or
+    } ifelse
+  } ifelse
+  {
+    1 add
+    4 index 3 index add 0.5 mul exch 4 index 3 index add 0.5 mul exch
+    6 index 6 index 4 index 4 index 4 index funcSH
+    2 index 6 index 6 index 4 index 4 index funcSH
+    6 index 2 index 4 index 6 index 4 index funcSH
+    5 3 roll 3 2 roll funcSH pop pop
+  } {
+    pop 3 index 2 index add 0.5 mul 3 index  2 index add 0.5 mul
+    funcCol sc
+    dup 4 index exch mat transform m
+    3 index 3 index mat transform l
+    1 index 3 index mat transform l
+    mat transform l pop pop h f*
+  } ifelse
+} def
+/axialCol {
+  dup 0 lt {
+    pop t0
+  } {
+    dup 1 gt {
+      pop t1
+    } {
+      dt mul t0 add
+    } ifelse
+  } ifelse
+  func n array astore
+} def
+/axialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index axialCol 2 index axialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index axialSH
+    exch 3 2 roll axialSH
+  } {
+    pop 2 copy add 0.5 mul
+    axialCol sc
+    exch dup dx mul x0 add exch dy mul y0 add
+    3 2 roll dup dx mul x0 add exch dy mul y0 add
+    dx abs dy abs ge {
+      2 copy yMin sub dy mul dx div add yMin m
+      yMax sub dy mul dx div add yMax l
+      2 copy yMax sub dy mul dx div add yMax l
+      yMin sub dy mul dx div add yMin l
+      h f*
+    } {
+      exch 2 copy xMin sub dx mul dy div add xMin exch m
+      xMax sub dx mul dy div add xMax exch l
+      exch 2 copy xMax sub dx mul dy div add xMax exch l
+      xMin sub dx mul dy div add xMin exch l
+      h f*
+    } ifelse
+  } ifelse
+} def
+/radialCol {
+  dup t0 lt {
+    pop t0
+  } {
+    dup t1 gt {
+      pop t1
+    } if
+  } ifelse
+  func n array astore
+} def
+/radialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index dt mul t0 add radialCol
+      2 index dt mul t0 add radialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index radialSH
+    exch 3 2 roll radialSH
+  } {
+    pop 2 copy add 0.5 mul dt mul t0 add
+    radialCol sc
+    encl {
+      exch dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      0 360 arc h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      360 0 arcn h f
+    } {
+      2 copy
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arcn
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arcn h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arc
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arc h f
+    } ifelse
+  } ifelse
+} def
+end
+%%EndResource
+%%EndProlog
+%%BeginSetup
+xpdf begin
+%%EndSetup
+pdfStartPage
+%%EndPageSetup
+[] 0 d
+1 i
+0 j
+0 J
+10 M
+1 w
+/DeviceGray {} cs
+[0] sc
+/DeviceGray {} CS
+[0] SC
+false op
+false OP
+{} settransfer
+0 0 120.029701 84.987015 re
+W
+q
+[1 0 0 -1 0 84.987015] cm
+q
+/DeviceRGB {} CS
+[0 0 0] SC
+0.75 w
+0 J
+0 j
+[] 0 d
+4 M
+q
+[1 0 0 1 0 0] cm
+7.43 1.086 m
+7.43 83.586 l
+S
+Q
+/DeviceRGB {} cs
+[0 0 0] sc
+/DeviceRGB {} CS
+[0 0 0] SC
+0.140625 w
+1 j
+q
+[0 1 -1 0 0 0] cm
+2.527 -6.523 m
+0.07 -7.426 l
+2.527 -8.332 l
+2.137 -7.797 2.137 -7.066 2.527 -6.523 c
+h
+f*
+2.527 -6.523 m
+0.07 -7.426 l
+2.527 -8.332 l
+2.137 -7.797 2.137 -7.066 2.527 -6.523 c
+h
+S
+Q
+0.751181 w
+0 j
+q
+[1 0 0 1 0 0] cm
+3.68 79.836 m
+116.18 79.836 l
+S
+Q
+/DeviceRGB {} cs
+[0 0 0] sc
+/DeviceRGB {} CS
+[0 0 0] SC
+0.140846 w
+1 j
+q
+[-1 0 0 -1 0 0] cm
+-114.734 -78.926 m
+-117.195 -79.832 l
+-114.734 -80.734 l
+-115.129 -80.203 -115.125 -79.469 -114.734 -78.926 c
+h
+f*
+-114.734 -78.926 m
+-117.195 -79.832 l
+-114.734 -80.734 l
+-115.129 -80.203 -115.125 -79.469 -114.734 -78.926 c
+h
+S
+Q
+0.425197 w
+0 j
+q
+[1 0 0 1 0 0] cm
+6.836 79.551 m
+20.094 71.594 l
+20.637 71.262 l
+21.184 71.215 l
+22.223 70.055 l
+22.391 69.938 l
+23.41 69.891 l
+23.504 69.867 l
+24.449 68.422 l
+24.594 68.281 l
+24.758 68.258 l
+26.559 68.211 l
+26.84 68.047 l
+27.055 67.809 l
+27.574 66.176 l
+27.766 65.891 l
+28.098 65.867 l
+30.797 65.844 l
+31.125 65.68 l
+31.246 65.441 l
+31.34 65.137 l
+32.145 62.578 l
+32.285 62.438 l
+32.523 62.34 l
+36.703 62.363 l
+36.938 62.305 l
+37.223 62.188 l
+37.328 62.008 l
+38.914 56.562 l
+39.059 56.469 l
+47.984 56.445 l
+48.18 56.41 l
+48.363 56.207 l
+48.504 55.934 l
+48.613 55.555 l
+49.184 52.117 l
+49.281 52 l
+49.434 51.863 l
+49.711 51.766 l
+50.395 51.695 l
+50.992 51.648 l
+51.207 51.598 l
+51.301 51.473 l
+51.52 51.121 l
+51.695 50.711 l
+52.004 49.996 l
+52.172 49.285 l
+52.641 45.77 l
+52.797 45.402 l
+53.031 45.008 l
+53.219 44.801 l
+53.375 44.758 l
+53.609 44.75 l
+69.633 44.648 l
+69.832 44.59 l
+70.043 44.473 l
+70.258 44.281 l
+70.434 44.055 l
+70.535 43.738 l
+70.57 43.52 l
+70.781 40.301 l
+71.008 38.207 l
+71.23 34.273 l
+71.445 33.211 l
+71.598 32.867 l
+71.754 32.785 l
+90.742 32.723 l
+91 32.535 l
+91.121 32.227 l
+91.309 31.469 l
+91.641 30 l
+92.281 20.816 l
+93.062 12.34 l
+93.273 11.25 l
+93.652 10.328 l
+93.938 9.855 l
+94.199 9.57 l
+94.531 9.402 l
+95.027 9.355 l
+103.523 9.324 l
+S
+Q
+q
+[1 0 0 1 0 0] cm
+8.5 68.652 m
+8.895 68.906 l
+9.109 68.992 l
+9.465 68.98 l
+9.82 68.859 l
+10.16 68.684 l
+10.492 68.637 l
+10.637 68.801 l
+10.637 68.801 10.719 68.934 10.777 68.934 c
+10.836 68.934 11.062 68.934 11.062 68.934 c
+11.238 68.895 l
+11.371 69.098 l
+11.371 69.098 11.559 69.215 11.605 69.227 c
+11.652 69.238 11.75 69.25 11.797 69.238 c
+11.844 69.227 12.008 69.203 12.066 69.203 c
+12.125 69.203 12.246 69.203 12.246 69.203 c
+12.281 69.309 l
+12.363 69.465 l
+12.363 69.465 12.504 69.441 12.648 69.441 c
+12.789 69.441 12.969 69.453 12.969 69.453 c
+12.969 69.453 12.957 69.371 13.016 69.324 c
+13.074 69.273 13.086 69.238 13.156 69.262 c
+13.227 69.285 13.238 69.43 13.238 69.43 c
+13.238 69.43 13.273 69.5 13.359 69.5 c
+13.441 69.5 13.641 69.523 13.727 69.512 c
+13.809 69.5 13.961 69.5 14.066 69.5 c
+14.176 69.5 14.531 69.559 14.531 69.559 c
+14.684 69.559 l
+14.648 69.691 l
+14.922 69.699 l
+14.91 69.902 l
+15.488 69.949 l
+15.441 70.105 l
+15.867 70.031 l
+16.008 70.211 l
+16.34 70.258 l
+16.188 70.48 l
+16.602 70.566 l
+16.602 70.566 16.59 70.469 16.648 70.469 c
+16.707 70.469 16.84 70.555 16.84 70.555 c
+16.801 70.789 l
+16.875 71.039 l
+17.18 71.18 l
+17.371 71.273 l
+17.738 71.027 l
+17.738 71.027 17.844 71.062 17.832 71.109 c
+17.82 71.156 17.797 71.395 17.797 71.395 c
+17.867 71.664 l
+17.988 72.066 l
+18.152 71.688 l
+18.152 71.688 18.246 71.5 18.328 71.465 c
+18.414 71.43 18.602 71.309 18.602 71.309 c
+18.531 71.809 l
+18.66 71.961 l
+18.715 72.77 l
+19.066 72.953 l
+19.148 72.586 l
+19.602 72.184 l
+19.801 71.363 l
+19.867 72.637 l
+19.938 74.812 l
+20.121 75.414 l
+20.539 74.914 l
+20.992 74.191 l
+21.125 73.391 l
+21.227 71.262 l
+21.461 77.375 l
+21.66 77.793 l
+21.93 78.145 l
+22.047 77.406 l
+22.211 73.574 l
+22.613 72.383 l
+22.797 70.742 l
+23.117 77.324 l
+23.266 79.18 l
+23.762 79.406 l
+24.117 79.242 l
+24.285 78.531 l
+24.52 72.398 l
+24.828 70.125 l
+24.922 69.18 l
+25.16 75.215 l
+25.398 78.957 l
+25.801 79.527 l
+26.559 79.691 l
+26.938 79.527 l
+27.008 78.344 l
+27.289 76.281 l
+27.93 66.93 l
+28.215 72.113 l
+28.332 75.715 l
+28.523 77.891 l
+28.594 79.43 l
+29.754 79.668 l
+31.031 79.453 l
+31.48 78.625 l
+31.527 77.301 l
+31.719 71.43 l
+32.098 62.242 l
+32.594 74.531 l
+32.832 78.484 l
+33.234 79.453 l
+34.867 79.762 l
+37.234 79.715 l
+37.754 79.004 l
+38.441 54.004 l
+38.656 53.836 l
+39.672 78.957 l
+40.098 79.5 l
+48.48 79.406 l
+48.836 78.625 l
+49.477 58.359 l
+50.258 76.141 l
+50.754 77.773 l
+51.227 78.316 l
+51.629 77.488 l
+52.172 76.117 l
+52.906 56.914 l
+53.855 78.625 l
+54.188 79.289 l
+55.273 79.762 l
+69.906 79.715 l
+70.781 78.461 l
+71.328 30.801 l
+72.18 78.414 l
+72.652 79.785 l
+90.695 79.738 l
+91.57 78.414 l
+92.777 15.648 l
+94.293 78.578 l
+95.098 79.762 l
+102.957 79.668 l
+S
+Q
+Q
+Q
+showpage
+%%PageTrailer
+pdfEndPage
+%%Trailer
+end
+%%DocumentSuppliedResources:
+%%EOF
